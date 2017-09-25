@@ -39,28 +39,32 @@
         ]
       },
       {
-        "name":"工作经验",
+        "name":"自我评价",
         "information":[
           {
-            "name":"北京用友政务软件有限公司",
+            "name":"",
             "education":"",
-            "time":"2016.09-2017.06",
+            "time":"",
             "content":[
               {
                 "time":"",
-                "detail":"负责网站的更新以及平面设计、制作网站专题页面；"
+                "detail":"自主学习能力强，对新技术有着强烈的求知欲望，具有很强的吸收能力和独立分析能力；"
               },
               {
                 "time":"",
-                "detail":"进出车辆管理；"
+                "detail":"工作责任心强，具有良好的沟通能力和团队合作精神；"
               },
               {
                 "time":"",
-                "detail":"办公系统中通讯录的页面交互开发；"
+                "detail":"适应环境能力较强、能承受一定的工作压力；"
               },
               {
                 "time":"",
-                "detail":"办公系统的办公云盘的页面交互开发；"
+                "detail":"思路清晰，做事严谨认真、性格开朗、乐观积极；"
+              },
+              {
+                "time":"",
+                "detail":"对工作尽职尽责，喜欢从事有挑战性的工作；"
               }
             ]
           }
@@ -71,62 +75,56 @@
         "information":[
           {
             "name":"项目名称1:门户网站",
-            "education":"",
-            "time":"PC端／移动App",
+            "type":"项目类型：SPA单文件组件开发",
+            "time":"2017.08.01-至今",
+            "tech":"项目技术：vue.js、vue-router、iscroll.js插件、less、axios、express、webpack、跨域；",
+            "tesk":"负责任务:",
             "content":[
               {
-                "time":"",
-                "name":"项目介绍",
-                "detail":"该平台充分展示了用户的交流信息、留言板的信息提交与显示、用户按地区或时间访问的次数统计等功能；"
+                "detail":"使用import和export进行模块化开发；"
               },
               {
-                "time":"",
-                "name":"职责描述",
-                "detail":"主要是从模块化和组件化的角度进行网站的开发，不再单独的实现静态页面而是根据数据实现动态页面的切换,"
+                "detail":"使用单文件组件形式开发信息介绍功能、简历展示功能及留言板功能；"
               },
               {
-                "time":"",
-                "name":"该技术栈",
-                "detail":"node.js、express、vue.js、webpack、axios、跨域、iscroll.js、DIV+CSS、js；"
+                "detail":"使用iscorll.js实现简历子组件的滚动效果及scrollToElement()方法实现左右侧信息相呼应；"
               },
               {
-                "time":"",
-                "name":"项目网址",
-                "detail":"",
-                "website":"http://www.baidu.com/"
+                "detail":"使用vue-router进行首页面重定向及子组件加载；"
+              },
+              {
+                "detail":"使用transition和animation实现段落加载的动态效果；"
+              },
+              {
+                "detail":"使用axios和cors跨域从后台获取数据；"
               }
             ]
           },
           {
-            "name":"项目名称2:协同办公平台",
-            "education":"",
-            "time":"pc端",
+            "name":"项目名称2:协同办公平台(北京用友政务软件有限公司)",
+            "type":"项目类型：PC端",
+            "time":"2016.09.05-2017.06.15",
+            "tech":"项目技术：HTML、DIV+CSS、JS、jQuery、Bootstrap、ajax、zTree",
+            "tesk":"负责任务:",
+            "website":"http://www.itonglian.com/",
             "content":[
               {
-                "time":"",
-                "name":"项目介绍",
-                "detail":"协同办公平台是一个大型的办公系统软件，主要应用于企事业单位的办公系统(该项目已上线)"
+                "detail":"使用DIV+CSS进行相应式布局"
               },
               {
-                "time":"",
-                "name":"主要功能",
-                "detail":"该平台充分展示了公文管理、人事管理、日常办公、预算采购合同管控、会议服务、办公云盘、通讯录、日程管理等功能"
+                "detail":"使用zTree框架参与开发文件结构及部门结构数"
               },
               {
-                "time":"",
-                "name":"职责描述",
-                "detail":"主要负责网站的通讯录和办公云盘的功能以及进出车辆管理功能,负责页面的html、css布局和优化工作， 及公司网站的前端开发与维护"
+                "detail":"使用bootstrap、jQuery、ztree、layer.js开发通讯录、办公云盘、收发文、公文统计、公文查询、日程管理等功能"
               },
               {
-                "time":"",
-                "name":"该技术栈",
-                "detail":"DIV+CSS、JS/jQuery、bootstrap、echarts等；"
+                "detail":"使用ajax与后台进行数据交互；"
               },
               {
-                "time":"",
-                "name":"项目网址",
-                "detail":"",
-                "website":"http://www.itonglian.com/"
+                "detail":"使用github进行版本管理；"
+              },
+              {
+                "detail":"对ie低版本浏览器进行兼容性处理；"
               }
             ]
           }
@@ -178,38 +176,6 @@
               {
                 "time":"",
                 "detail":"大学期间多次获得优秀学生干部奖;"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name":"自我评价",
-        "information":[
-          {
-            "name":"",
-            "education":"",
-            "time":"",
-            "content":[
-              {
-                "time":"",
-                "detail":"自主学习能力强，对新技术有着强烈的求知欲望，具有很强的吸收能力和独立分析能力；"
-              },
-              {
-                "time":"",
-                "detail":"工作责任心强，具有良好的沟通能力和团队合作精神；"
-              },
-              {
-                "time":"",
-                "detail":"适应环境能力较强、能承受一定的工作压力；"
-              },
-              {
-                "time":"",
-                "detail":"思路清晰，做事严谨认真、性格开朗、乐观积极；"
-              },
-              {
-                "time":"",
-                "detail":"对工作尽职尽责，喜欢从事有挑战性的工作；"
               }
             ]
           }

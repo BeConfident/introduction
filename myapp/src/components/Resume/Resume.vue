@@ -14,20 +14,24 @@
                         <dl v-for="(item,index) in message.content" :class="{'active':current ==index}">
                             <dt>{{item.name}}</dt>
                             <dd v-for="every in item.information" class="info">
-                                <p>
+                                <p class="intro">
                                     <span class="infor-name">{{every.name}}</span>
                                     <em class="infor-educa">{{every.education}}</em>
                                     <i class="infor-time">{{every.time}}</i>
                                 </p>
+                                <div class="cycle">
+                                    <p>{{every.type}}</p>
+                                    <p>{{every.tech}}</p>
+                                    <p>{{every.tesk}}</p>
+                                </div>
                                 <ul>
                                     <li v-for="some in every.content">
                                         <span class="content-time" v-show="some.time">{{some.time}}</span>
-                                        <span class="content-name" v-show="some.name">{{some.name}}</span>
                                         <span class="content-detail" v-show="some.detail">{{some.detail}}</span>
-                                        <span class="content-website" v-show="some.website"><a :href="some.website">{{
-                                            some.website}}</a></span>
                                     </li>
                                 </ul>
+                                <p class="content-website" v-show="every.website">网址为:
+                                    <a :href="every.website">{{every.website}}</a></p>
                             </dd>
                         </dl>
                     </div>
@@ -63,7 +67,7 @@
                     count=0;
                 }
                 this.current = index;
-                var dls = this.$refs.right.getElementsByTagName("dl");
+                let dls = this.$refs.right.getElementsByTagName("dl");
                 this.scroll.scrollToElement(dls[index]);
             }
         }
@@ -72,7 +76,7 @@
 <style lang="less" scoped>
     fieldset{
         width:99%;
-        height:19.7rem;
+        height:19.8rem;
         border:0.05rem solid rgba(7, 17, 27, 0.1);
         margin: 1rem auto;
         border-top-left-radius: 1rem;
@@ -100,22 +104,27 @@
             .message-left {
                 width:20%;
                 min-width:20%;
-                li {
-                    font-size:0.7rem;
-                    font-weight:500;
-                    padding:1.5rem 0;
-                    display:flex;
-                    justify-content: center;
-                    border-bottom:0.06rem solid rgba(7,17,27,0.1);
-                    /*background:rgba(243,245,247,0.5);*/
-                    cursor:pointer;
-                    color:rgb(77,85,93);
+                ul {
+                    height:100%;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size:0.7rem;
+                        font-weight:500;
+                        border-bottom:0.06rem solid rgba(7,17,27,0.1);
+                        /*background:rgba(243,245,247,0.5);*/
+                        cursor:pointer;
+                        color:rgb(77,85,93);
+                        height:25%;
+                        align-item:center;
 
-                    &.on{
-                        background:rgba(255,255,255,0.7);
-                        color: #008000;
+                        &.on{
+                            background:rgba(255,255,255,0.7);
+                            color: #008000;
+                        }
+
                     }
-
                 }
             }
             .message-right {
@@ -134,30 +143,47 @@
                     }
                     .info{
                         padding:0.2rem 0.5rem;
-                        p {
+                        .intro {
                             display:flex;
+                            flex-wrap:wrap;
                             justify-content: space-between;
                             font-size:0.7rem;
                             font-weight:normal;
                             .infor-time {
-                                font-size:0.6rem;
+                                font-size:0.5rem;
                                 font-weight:200;
                             }
                         }
-                        .content-time,.content-detail {
+                        .cycle {
                             font-size:0.5rem;
                             font-weight:200;
+                            padding-bottom:0.2rem;
+                            p {
+                                padding-top:0.2rem;
+                            }
                         }
-                        .content-name,.content-website {
+                        li {
+                            display:flex;
+                            flex-direction: row;
+                            height:0.8rem;
                             font-size:0.5rem;
-                            font-weight:500;
+                            font-weight:200;
+                            .content-time {
+                                padding-right:0.2rem;
+                            }
+                            .content-detail{
+                                display: flex;
+                                flex-direction: column;
+                                /*justify-content: center;*/
+                            }
                         }
                         .content-website {
+                            font-size:0.5rem;
+                            font-weight:500;
                             a {
                                 color:#008000;
                                 text-decoration:none;
                             }
-
                         }
                     }
                 }
